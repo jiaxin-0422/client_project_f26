@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/script.js" defer></script>
     <title>Engaged Learning Resources | UMSI</title>
 
 </head>
@@ -16,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href = "index.html" class="active" aria-current="page">Home</a></li>
-                <li><a href = "prep.html">Preparing for & Starting Your Experience</a></li>
+                <li><a href = "start.html">Starting Your Experience</a></li>
                 <li><a href = "during.html">During Your Experience</a></li>
                 <li><a href = "end.html">Ending Your Experience </a></li>
             </ul>
@@ -49,27 +50,41 @@
     </ul>
 </section>
 
- <section>
+<!-- Timeline structure adapted from W3Schools:
+https://www.w3schools.com/howto/howto_css_timeline.asp
+-->
+
+<section class="timeline-section">
     <h2>Guidance for Every Stage</h2>
     <p>Engaged learning projects can change as new needs, constraints, and insights emerge. Find guidance for the stage of work you are navigating <strong>now.</strong></p>
-    <article>
-      <h3>Start Here</h3>
-      <p>Set learning goals, understand the project context, examine your assumptions, define team roles, and establish a strong relationship with your partner.</p>
-      <a href="prep.html">Prepare for your experience</a>
-    </article>
 
-    <article>
-      <h3>Navigate the Experience</h3>
-      <p>Manage projects and teams, conduct ethical research, communicate progress, respond to feedback, and work through unexpected challenges.</p>
-      <a href="during.html">Find active project resources</a>
-    </article>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h3>Start Here</h3>
+                <p>Set learning goals, understand the project context, examine your assumptions, define team roles, and establish a strong relationship with your partner.</p>
+                <a href="start.html">Prepare for your experience</a>
+            </div>
+        </div>
 
-    <article>
-      <h3>Wrap Up and Move Forward</h3>
-      <p>Complete a responsible handoff, evaluate your impact, reflect on your growth, and translate your work into resume, portfolio, and interview content.</p>
-      <a href="end.html">Plan your next steps</a>
-    </article>
-  </section>
+        <div class="container right">
+            <div class="content">
+                <h3>Navigate the Experience</h3>
+                <p>Manage projects and teams, conduct ethical research, communicate progress, respond to feedback, and work through unexpected challenges.</p>
+                <a href="during.html">Explore project resources</a>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h3>Wrap Up and Move Forward</h3>
+                <p>Complete a responsible handoff, evaluate your impact, reflect on your growth, and translate your work into resume, portfolio, and interview content.
+                </p>
+                <a href="end.html">Plan your next steps</a>
+            </div>
+        </div>
+    </div>
+</section>
 
    <section class="program-grid">
     <h2>Featured Programs</h2>
@@ -127,7 +142,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
 </body>
 </html>

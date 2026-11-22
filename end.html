@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
   <title>Ending Your Experience</title>
 </head>
 
@@ -17,7 +18,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="prep.html">Preparing for & Starting Your Experience</a></li>
+        <li><a href="start.html">Starting Your Experience</a></li>
         <li><a href="during.html">During Your Experience</a></li>
         <li><a href="end.html" class="active" aria-current="page">Ending Your Experience</a></li>
       </ul>
@@ -26,12 +27,12 @@
   </header>
   <main id="main">
 
-    <section>
+    <section class="intro">
       <h2>Completing, Reflecting, and Translating Your Impact</h2>
+       <img src="images/umsi-rackham-resource-fair.jpg" alt="Students talking with a presenter at a resource fair"
+        width="600" height="400">
       <p>Close your project responsibly, evaluate your outcomes, and articulate your real-world experience for your
         future career.</p>
-      <img src="images/umsi-rackham-resource-fair.jpg" alt="Students talking with a presenter at a resource fair"
-        width="600" height="400">
     </section>
 
     <section>
@@ -43,20 +44,23 @@
           momentum</strong>.
       </p>
 
-      <p>
-        Responsible handoffs ensure that partners are not left with abandoned
-        tools or undocumented systems they cannot maintain. Simultaneously,
-        structured reflection forces you to pause and ask:
-        <em>
-          What did I learn about my technical skills, my teamwork style, and
-          the ethical impact of my work?
-        </em>
-        Without reflection, experience is just something that happened to you;
-        with reflection, experience becomes expertise. Learning to translate
-        complex, messy project narratives into clear resume bullets and
-        portfolio case studies is what turns your UMSI education into your
-        greatest professional asset.
-      </p>
+      <details>
+        <summary>Read more about the value of reflection and translation</summary>
+        <p>
+          Responsible handoffs ensure that partners are not left with abandoned
+          tools or undocumented systems they cannot maintain. Simultaneously,
+          structured reflection forces you to pause and ask:
+          <em>
+            What did I learn about my technical skills, my teamwork style, and
+            the ethical impact of my work?
+          </em>
+          Without reflection, experience is just something that happened to you;
+          with reflection, experience becomes expertise. Learning to translate
+          complex, messy project narratives into clear resume bullets and
+          portfolio case studies is what turns your UMSI education into your
+          greatest professional asset.
+        </p>
+      </details>
 
       <article>
         <h3>Value & Narrative</h3>
@@ -98,14 +102,14 @@
     </section>
 
     <img src="images/umsi-rackham-resource-fair-03.jpg"
-        alt="Students talking together at a University of Michigan resource fair" width="600" height="400">
+      alt="Students talking together at a University of Michigan resource fair" width="600" height="400">
 
-    <section>
+    <section class="career-grid">
       <h2>After the Experience: Career Integration & Portfolios</h2>
 
       <p>
-        Employers value students who can solve unscripted problems, collaborate
-        with diverse teams, and deliver results under realistic constraints.
+        Employers value students who can solve unscripted problems, collaborate with diverse teams, and deliver results
+        under realistic constraints.
         After completing your project, take time to connect your engaged learning
         experience to your professional goals.
       </p>
@@ -161,7 +165,7 @@
     <address>
       <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
     </address>
-    <p>&copy; 2026 Regents of the University of Michigan</p>
+    <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
   </footer>
 </body>
 
